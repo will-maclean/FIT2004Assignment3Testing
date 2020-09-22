@@ -86,7 +86,7 @@ class TestAssignment2(unittest.TestCase):
     def test_build_from_substrings(self):
         # return  # uncomment this if you haven't implemented this function yet
 
-        all_cases = csv_worker.csv_to_lst("build_from_substrings.csv")
+        all_cases = csv_worker.csv_to_lst_build_sub("build_from_substrings.csv")
         for case, expected in all_cases:
             solution = self.check_input_unmodified(build_from_substrings, case)
             length = len(solution) if isinstance(solution, list) else solution
@@ -99,7 +99,7 @@ class TestAssignment2(unittest.TestCase):
     def test_alpha_pos(self):
         # return  # uncomment this if you haven't implemented this function yet
 
-        all_cases = csv_worker.csv_to_lst("alpha_pos.csv")
+        all_cases = csv_worker.csv_to_lst_build_sub("alpha_pos.csv")
         for case, expected in all_cases:
             solution = self.check_input_unmodified(alpha_pos, case)
             self.assertEqual(expected, solution, msg="wrong value!")
