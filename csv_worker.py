@@ -65,8 +65,6 @@ def add_test_cases(filename, cases):
 
 class TestCsvWorker(unittest.TestCase):
     test_lst = [
-            # Write other cases here with only the size of substrings (or False)
-            # But it would be nice to include your solution as a comment :)
             (("abbcc", "bccabccad"), False),
             (("abbcc", "d"), False),
             (("abbcc", "a"), 1),
